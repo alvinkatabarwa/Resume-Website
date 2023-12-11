@@ -1,289 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alvin Shaka</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="computer-nav">
-      <div class="logo">Alvin Shaka</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Alvin Shaka</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./CSS/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@200&display=swap"
+rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<title>Portfolio</title>
+</head>
+<body>
+   <header>  
+      <div class="container">  
+        <nav class="flex items-centre justify-between">  
+            <div class="left flex justfiy-right">  
+             
+            <div>  
+              <a href="#">Home</a>  
+              <a href="#">About</a>  
+              <a href="#">Services</a>  
+              <a href="#">Blog</a></li>  
+              <a href="#">More</a>  
+            </div>  
+          </div>  
+          <div class="right">  
+            <button class="btn btn-primary">Contact</button>  
+          </div>  
+        </nav>
+      </div>  
+    </header>
+    <div class="hero flex items-center justify-between">
+      <div class="left flex-1 justify-center">
+        <div class="circular-profile">
+          <img src="./img/profile photo.jpg" alt="Profile">
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <div class="button-container">
+          <button class="btn btn-secondary">Download CV</button>
+          <button class="btn btn-primary">Contact</button>
         </div>
       </div>
-    </nav>
-<section id="profile">
-    <div class="section__pic-container">
-        <img src="Alvin Shaka profile pic.jpg" alt="Alvin Shaka profile picture">
+      <div class="right flex-1">
+        
+        <h1>I'm a Web<br> <span>Developer</span></h1>
+        <p>Greetings! I'm Alvin, a passionate and detail-oriented web developer dedicated to crafting exceptional digital experiences. With a profound love for coding and an eye for design, I bring forth a unique blend of technical expertise and creative flair.</p>
+      </div>
     </div>
-    <div class="section_text">
-        <p class="s.ection__text__p1" id="fix">Hello I'm </p>
-        <h1> ALVIN SHAKA</h1>
-        <p class="section__text__p2"> Frontend Developer</p>
-        <div class="btn-container"></div>
-        <button class="btn btn-color-2"
-        onclick="window.open()">Download CV</button>
 
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-    </div>
-    <div id="socials-container">
-      <img
-      src="./assets/linkedin.png"
-      alt="My LinkedIn profile"
-      class="icon"
-      onclick="location.href='https://linkedin.com/'"
-    />
-      <img
-      src="./assets/github.png"
-      alt="My GitHub profile"
-      class="icon"
-      onclick="location.href='https://GitHub.com/'"
-    />
-    </div>
-    </div>
-</section>
-<section id="About">
-  <p class="section__text__p1">Get To Know More</p>
-  <h1 class="title">About me</h1>
-  <div class="section-container">
-    <div class="section__pic-container">
-      <!-- <img src=""alt="profile picture 2" class="about-pic"/> -->
-    </div><div><div class= "about-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <img src="./assets/experience.png" alt="experience icon"
-          class="icon"/>
-          <h3>Experience</h3>
-          <p>2+years <br />Frontend Development</p>
-        </div>
-        <div class="details-container">
-          <img src="./assets/education.png" alt="education icon"
-          class="icon"/>
-          <h3>education</h3>
-          <p>2+years <br />ALU <br>Self-Study</p>
-
-        </div>
-      </div>
-      <div class="text-container">
-           <p>
-            I am a proactive and result-oriented software engineer with a keen interest in shaping innovative solutions within the dynamic realm of technology. I possess a robust foundation in computer science, complemented by a meticulous eye for detail that ensures the delivery of high-quality software applications. My confidence in problem-solving and my ability to adapt swiftly to emerging technologies enable me to navigate complex challenges with poise and determination.
-            </p>
-         </div>
-    </div>
-    </div>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2></h2>
     
-</section>
-<img
-src="./assets/arrow.png"
-alt="Arrow icon"
-class="icon arrow"
-onclick="location.href='./#experience'"
-/>
-</section>
-<section id="experience">
-<p class="section__text__p1">Explore My</p>
-<h1 class="title">Experience</h1>
-<div class="experience-details-container">
-<div class="about-containers">
-  <div class="details-container">
-    <h2 class="experience-sub-title">Frontend Development</h2>
-    <div class="article-container">
-      <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Experience icon"
-          class="icon"
-        />
-        <div>
-          <h3>HTML</h3>
-          <p>Experienced</p>
+        <div class="project">
+          <img src="./img/stock-vector-website-under-construction-page-flat-style-vector-illustration-684804541.jpg" alt="Project 1">
+          <h3>Project 1</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum nostrum iure, sit distinctio quia accusamus.</p>
         </div>
-      </article>
-      <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Experience icon"
-          class="icon"
-        />
-        <div>
-          <h3>CSS</h3>
-          <p>Experienced</p>
+    
+        <div class="project">
+          <img src="/Assets/img/stock-vector-website-under-construction-page-flat-style-vector-illustration-684804541.jpg" alt="Project 2">
+          <h3>Project 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam harum obcaecati nihil ab vitae possimus!</p>
         </div>
-      </article>
-      <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Experience icon"
-          class="icon"
-        />
-       
-        <div>
-          <h3>JavaScript</h3>
-          <p>Basic</p>
-        </div>
-      </article>
-
-    </div>
-  </div>
-  <div class="details-container">
-    <h2 class="experience-sub-title"> Backend Development</h2>
-    <div class="article-container">
-      <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Experience icon"
-          class="icon"
-        />
-        <div>
-          <h3>SQL</h3>
-          <p>Basic</p>
-        </div>
-      </article>
-      <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Experience icon"
-          class="icon"
-        />
-        <div>
-          <h3>  Python</h3>
-          <p>Intermediate</p>
-        </div>
-      </article>
-      <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Experience icon"
-          class="icon"/>
-          <h3>Git</h3>
-          <p>Intermediate</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</div>
-</div>
-<img
-src="./assets/arrow.png"
-alt="Arrow icon"
-class="icon arrow"
-onclick="location.href='./#projects'"
-/>
-</section>
-<section id="projects">
-<p class="section__text__p1">Browse My Recent</p>
-<h1 class="title">Projects</h1>
-<div class="experience-details-container">
-<div class="about-containers">
-  <div class="details-container color-container">
-    <div class="article-container">
-      <img
-        src="./assets/download.jpeg"
-        alt="Project 1"
-        class="project-img"
-      />
-    </div>
-    <h2 class="experience-sub-title project-title">SNAKE GAME</h2>
-    <div class="btn-container">
-      <button
-        class="btn btn-color-2 project-btn"
-        onclick="location.href='https://github.com/alvinkatabarwa1/SNAKE-GAME"
-      >
-        Github
-      </button>
-     
-    </div>
-  </div>
- 
-  <div class="details-container color-container">
-    <div class="article-container">
-      <img
-        src="./assets/under construction.jpeg"
-        alt="Project 3"
-        class="project-img"
-      />
-    </div>
-    <h2 class="experience-sub-title project-title">UNDER CONSTRUCTION</h2>
-    <div class="btn-container">
-      <button
-        class="btn btn-color-2 project-btn"
-        onclick="location.href='https://github.com/'"
-      >
-        Github
-      </button>
-      
-    </div>
-  </div>
-</div>
-</div>
-<img
-src="./assets/arrow.png"
-alt="Arrow icon"
-class="icon arrow"
-onclick="location.href='./#contact'"
-/>
-</section>
-<section id="contact">
-<p class="section__text__p1">Get in Touch</p>
-<h1 class="title">Contact Me</h1>
-<div class="contact-info-upper-container">
-<div class="contact-info-container">
-  <img
-    src="./assets/email.png"
-    alt="Email icon"
-    class="icon contact-icon email-icon"
-  />
-  <p><a href="mailto:examplemail@gmail.com">alvinkatabarwa@gmail.com</a></p>
-</div>
-<div class="contact-info-container">
-  <img
-    src="./assets/linkedin.png"
-    alt="LinkedIn icon"
-    class="icon contact-icon"
-  />
-  <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-</div>
-</div>
-</section>
-<footer>
-<nav>
-<div class="nav-links-container">
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</div>
-</nav>
-<p>Copyright &#169; 2023 Alvin Shaka. All Rights Reserved.</p>
-</footer>
-    <script src="script.js"></script>
+    
+        
+    
+      </div>
+    </section>
+    
 </body>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div></div>
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+      <div></div>
+    </div>
+    <div class="footer-info">
+      <p>&copy; 2023 Alvin Shaka. All Rights Reserved.</p>
+      <p>Designed by Alvin Shaka</p>
+    </div>
+  </div>
+</footer>
 </html>
